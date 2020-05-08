@@ -9,15 +9,20 @@ Work in progress. Not on every platform all information are supported.
 ### Building / Installation
 
 ```bash
+yarn install
+```
+or
+```bash
 npm install
 ```
-
 ### Usage
 
 ```javascript
 const activeWindows = require('active-windows');
 
-console.log(activeWindows.getActiveWindow());
+activeWindows().getActiveWindow().then((result)=>{
+    console.log(result)
+});
 ```
 
 See `sample.js` for more information.
@@ -40,5 +45,20 @@ See `sample.js` for more information.
   windowPid: '34218',
   // Idle Time in seconds
   idleTime: '42',
+}
+
+```
+### MacOS return value
+```javascript
+{
+  os: 'macos',
+  windowClass: 'com.microsoft.VSCode',
+  windowName: 'Code',
+  windowDesktop: null,
+  windowType: null,
+  windowPid: '7531',
+  atTime: '2020-05-08 16:34:00',
+  launchDate: '(null)',
+  isTerminated: 0
 }
 ```
