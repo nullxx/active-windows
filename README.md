@@ -18,7 +18,7 @@ npm install
 ### Usage
 
 ```javascript
-const activeWindows = require('active-windows');
+const activeWindows = require('electron-active-window');
 
 activeWindows().getActiveWindow().then((result)=>{
     console.log(result)
