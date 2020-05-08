@@ -2,7 +2,7 @@
 
 Node C++ N-API module to get information on the currently selected window and the user idle time on Linux, MacOS and Windows.
 
-> Currently only supports Windows and Linux / Xorg. 
+> Currently only supports Windows, Linux / Xorg and MacOS
 
 Work in progress. Not on every platform all information are supported.
 
