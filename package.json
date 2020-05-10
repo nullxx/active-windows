@@ -1,11 +1,11 @@
 {
-  "name": "active-windows",
-  "version": "0.1.12",
-  "author": "Yves Hoppe <contact@bytee.net> (https://bytee.net)",
-  "homepage": "https://bytee.net",
+  "name": "electron-active-window",
+  "version": "0.0.3",
+  "author": "Yves Hoppe <contact@bytee.net> (https://bytee.net), nullx <mail@nullx.me> (nullx.me)",
+  "homepage": "https://bytee.net, https://nullx.me",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yvesh/active-windows"
+    "url": "https://github.com/nullxx/active-windows"
   },
   "keywords": [
     "current-window",
