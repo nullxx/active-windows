@@ -1,5 +1,6 @@
 const exec = require('child_process').exec;
-const file_d = __dirname + '/mac' + '/window';
+const path = require('path');
+const file_d = path.join(__dirname, '/mac/window');
 const os = require('os');
 
 if (os.platform() == 'darwin'){

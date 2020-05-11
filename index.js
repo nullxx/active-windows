@@ -2,7 +2,8 @@ const activeWindows = require('./build/Release/wm');
 const os = require('os');
 const exec = require('child_process').exec;
 const fs = require('fs');
-const mac_d = __dirname + "/mac/window"
+const path = require('path');
+const mac_d = path.join(__dirname, '/mac/window');
 module.exports = () => { 
     if (os.platform() == 'darwin'){
             return{
