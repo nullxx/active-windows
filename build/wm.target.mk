@@ -24,8 +24,8 @@ DEFS_Debug := \
 CFLAGS_Debug := \
 	-O0 \
 	-gdwarf-2 \
-	-mmacosx-version-min=10.10 \
-	-arch x86_64 \
+	-mmacosx-version-min=10.13 \
+	-arch arm64 \
 	-Wall \
 	-Wendif-labels \
 	-W \
@@ -49,14 +49,14 @@ CFLAGS_OBJC_Debug :=
 CFLAGS_OBJCC_Debug :=
 
 INCS_Debug := \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/include/node \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/src \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/deps/openssl/config \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/deps/openssl/openssl/include \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/deps/uv/include \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/deps/zlib \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/deps/v8/include \
-	-I/Users/lt/Downloads/active-windows-master/node_modules/node-addon-api
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/include/node \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/src \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/deps/openssl/config \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/deps/openssl/openssl/include \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/deps/uv/include \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/deps/zlib \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/deps/v8/include \
+	-I/Users/nullx/Desktop/electron-active-window/node_modules/node-addon-api
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=wm' \
@@ -75,10 +75,10 @@ DEFS_Release := \
 
 # Flags passed to all source files.
 CFLAGS_Release := \
-	-Os \
+	-O3 \
 	-gdwarf-2 \
-	-mmacosx-version-min=10.10 \
-	-arch x86_64 \
+	-mmacosx-version-min=10.13 \
+	-arch arm64 \
 	-Wall \
 	-Wendif-labels \
 	-W \
@@ -102,14 +102,14 @@ CFLAGS_OBJC_Release :=
 CFLAGS_OBJCC_Release :=
 
 INCS_Release := \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/include/node \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/src \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/deps/openssl/config \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/deps/openssl/openssl/include \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/deps/uv/include \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/deps/zlib \
-	-I/Users/lt/Library/Caches/node-gyp/12.14.0/deps/v8/include \
-	-I/Users/lt/Downloads/active-windows-master/node_modules/node-addon-api
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/include/node \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/src \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/deps/openssl/config \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/deps/openssl/openssl/include \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/deps/uv/include \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/deps/zlib \
+	-I/Users/nullx/Library/Caches/node-gyp/15.14.0/deps/v8/include \
+	-I/Users/nullx/Desktop/electron-active-window/node_modules/node-addon-api
 
 OBJS := \
 	$(obj).target/$(TARGET)/cppsrc/main.o \
@@ -146,30 +146,26 @@ $(obj).$(TOOLSET)/$(TARGET)/%.o: $(obj)/%.cpp FORCE_DO_CMD
 ### Rules for final target.
 LDFLAGS_Debug := \
 	-undefined dynamic_lookup \
-	-Wl,-no_pie \
 	-Wl,-search_paths_first \
-	-mmacosx-version-min=10.10 \
-	-arch x86_64 \
+	-mmacosx-version-min=10.13 \
+	-arch arm64 \
 	-L$(builddir) \
 	-stdlib=libc++
 
 LIBTOOLFLAGS_Debug := \
 	-undefined dynamic_lookup \
-	-Wl,-no_pie \
 	-Wl,-search_paths_first
 
 LDFLAGS_Release := \
 	-undefined dynamic_lookup \
-	-Wl,-no_pie \
 	-Wl,-search_paths_first \
-	-mmacosx-version-min=10.10 \
-	-arch x86_64 \
+	-mmacosx-version-min=10.13 \
+	-arch arm64 \
 	-L$(builddir) \
 	-stdlib=libc++
 
 LIBTOOLFLAGS_Release := \
 	-undefined dynamic_lookup \
-	-Wl,-no_pie \
 	-Wl,-search_paths_first
 
 LIBS :=
