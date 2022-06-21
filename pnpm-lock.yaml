@@ -1,0 +1,19 @@
+lockfileVersion: 5.4
+
+specifiers:
+  fs: ^0.0.1-security
+  node-addon-api: ^1.7.1
+
+dependencies:
+  fs: 0.0.1-security
+  node-addon-api: 1.7.2
+
+packages:
+
+  /fs/0.0.1-security:
+    resolution: {integrity: sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==}
+    dev: false
+
+  /node-addon-api/1.7.2:
+    resolution: {integrity: sha512-ibPK3iA+vaY1eEjESkQkM0BbCqFOaZMiXRTtdB0u7b4djtY6JnsjvPdUHVMg6xQt3B8fpTTWHI9A+ADjM9frzg==}
+    dev: false

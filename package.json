@@ -1,6 +1,6 @@
 {
-  "name": "electron-active-window",
-  "version": "0.0.6",
+  "name": "@jannchie/active-window",
+  "version": "1.0.0",
   "author": "Yves Hoppe <contact@bytee.net> (https://bytee.net), nullx <mail@nullx.me> (nullx.me)",
   "homepage": "https://bytee.net, https://nullx.me",
   "repository": {
