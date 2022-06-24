@@ -4,6 +4,11 @@ const exec = require("child_process").exec;
 const fs = require("fs");
 const path = require("path");
 const mac_d = path.join(__dirname, "/mac/window");
+
+if (mac_d.indexOf("app.asar") !== -1) {
+  mac_d = mac_d.replace("app.asar", "app.asar.unpacked");
+}
+
 module.exports = () => {
   if (os.platform() == "darwin") {
     return {
